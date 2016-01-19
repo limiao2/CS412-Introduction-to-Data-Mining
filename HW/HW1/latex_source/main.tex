@@ -1,0 +1,166 @@
+\input{cs412.tex}
+
+%\documentclass{article}
+\usepackage{amsmath}
+\setlength{\parindent}{0pt}
+\usepackage{graphicx}
+%\usepackage{fullpage}
+%\usepackage{setspace} 
+\usepackage{float}
+%\usepackage{listings} 
+%\usepackage{bbm}
+\usepackage{bigstrut}
+%\usepackage{caption}
+%\usepackage{subcaption}
+%\usepackage{algpseudocode}
+%\usepackage{algorithm}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=matlab,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+\oddsidemargin 0in
+\evensidemargin 0in
+\textwidth 6.5in
+\topmargin -0.5in
+\textheight 9.0in
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true}
+\usepackage{color}
+
+%\newcommand{\ans}[1]{{[{\sc Answer:} {\sf #1}]}}
+\newcommand{\ans}[1]{}
+
+\begin{document}
+
+
+\solution{Li Miao}{\today}{Assignment 1}{Fall 2015}
+% Fill in the above, for example, as follows:
+% \solution{Joe Smith}{\today}{1}{Fall 2012}
+
+\pagestyle{myheadings}  % Leave this command alone
+
+
+\input{mingkun}
+
+\section*{Question 3 }
+
+
+\textbf{Answers}
+
+\begin{itemize}
+\item[a.]  
+	Before normalization: \\
+	mean = 76.814, variance = 171.396 \\
+	After normalization:\\
+	mean = 0, variance = 1
+
+\item[b.] For original score of $90$, $z$ = 1.007
+\end{itemize}
+
+\section*{Question 4}
+
+\textbf{Answers}
+
+Consider 10 data points in 2-D space as specified in the table below. 
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} \hline
+ $X$ & 0.69 & -1.31 & 0.39 & 0.05 & 1.29 & 0.49 & 0.19 & -0.81 & -0.31 & 0.71  \\ \hline 
+ $Y$ & 0.89 & -1.11 & 0.59 & 0.45 & 1.19 & 0.69 & 0.25 & -0.71 & -0.21 & 0.71  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{enumerate}
+  \item[a.] 
+  $$r_{x,y} = \frac{\sum_{i=1}^{n} x_i y_i - n \bar{X}\bar{Y}}{n \sigma_x \sigma_y } = \frac{5.3858-10*0.138*0.274}{10*0.7712*0.7327} = 0.283 $$
+  $r_{x,y} > 0$, so X and Y are positively correlated. X's values increase as Y's.
+
+  \item[b.] PCA may help to reduce the data size.Because we can minimize the co-variance between $X$ and $Y$.
+
+  \item[c.] $$C_{x,y} =  \begin{bmatrix}
+  \ E[(X-\mu_x)(X-\mu_x)] & E[(X-\mu_x)(Y-\mu_y)]
+  \\E[(Y-\mu_y)(X-\mu_x)] & E[(Y-\mu_y)(Y-\mu_y)]
+  \end{bmatrix}
+$$
+$$
+= \(\frac{1}{10} * 
+\begin{bmatrix}
+\ (X-\mu_x)(X-\mu_x)^T &(X-\mu_x)(Y-\mu_y)^T
+\\(Y-\mu_y)(X-\mu_x)^T & (Y-\mu_y)(Y-\mu_y)^T
+
+\end{bmatrix} 
+$$
+
+$$
+\\
+  = \begin{bmatrix}
+\ 0.5353 & 0.5008
+\\  0.5008 & 0.4831
+  
+  \end{bmatrix}
+ $$
+  
+  \item[d.] 
+  
+  Use Matlab, we can find eigenvectors of $C_{x,y}$
+  $$
+  P = \begin{bmatrix}
+  \ 0.6885 & -0.7253
+  \\ -0.7253 & -0.6885
+  \end{bmatrix}
+  $$
+Each row in P is a eigenvector.
+  
+  There are two principal components. [0.6885,-0.7253] and [-0.7253,-0.6885]. The first principal component is [-0.7253,-0.6885] because its eigenvalue 1.0106, is larger than 0.0078, the eigenvalue of [0.6885,-0.7253].
+
+  
+  \item[e.]
+   
+  \begin{figure}[h]
+  \centering
+\includegraphics[width=10cm, height=10cm]{4e}
+  \end{figure}
+  
+  \item[f.] 
+  $A = (0.05,0.45),B = (0.49,0.69)$
+  
+ $ A\prime = [-0.7253,-0.6885]*A = -0.3461$
+ 
+$  B\prime = [-0.7253,-0.6885]*B = -0.8304
+  $
+  %\controlprint{\bigv}
+  \\
+  \\
+
+\end{enumerate}
+\input{minimp1}
+\input{minimp2}
+
+\end{document}

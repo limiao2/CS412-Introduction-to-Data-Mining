@@ -1,0 +1,61 @@
+\section*{Question 1 }
+
+
+
+\textbf{Answers} 
+
+\begin{itemize}
+ \item[a.] (6') $Q_1$ = 82, median = 89 , $Q_3$ = 95.
+ \item[b.] (3') Mean = 87.011.
+ \item[c.] (3') Mode = 95.
+ \item[d.] (3') The distribution of students' final scores is negatively skewed. The mean is less than the median, and both of them are less than the mode. 
+ \end{itemize}
+ 
+
+\section*{Question 2 (15 points)}
+
+\textbf{Answers} 
+\begin{itemize}
+ \item[a.] 
+ \[
+ sim(obj1,obj2) = \frac{21}{21+28+39} = 0.2386
+\]
+%\textit{Obj1} and \textit{Obj2}
+\begin{table}[h]
+\centering
+
+\begin{tabular}{llll}
+                                                  & \multicolumn{3}{c}{{\it Obj 2}}                                             \\ \cline{2-4} 
+\multicolumn{1}{l|}{\multirow{3}{*}{{\it Obj 1}}} & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{1}  & \multicolumn{1}{l|}{0}   \\ \cline{2-4} 
+\multicolumn{1}{l|}{}                             & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{21} & \multicolumn{1}{l|}{28}  \\ \cline{2-4} 
+\multicolumn{1}{l|}{}                             & \multicolumn{1}{l|}{0} & \multicolumn{1}{l|}{39} & \multicolumn{1}{l|}{112} \\ \cline{2-4} 
+\end{tabular}
+\caption{Contingency Table for \textit{Obj1} and \textit{Obj 2}}
+\label{contin}
+\end{table}
+
+
+\item[b.]$A = (3,1,2)$ and $B = (-1,0,8)$. 
+ \begin{itemize}
+ \item[1.] \textit{Euclidean} distance. 
+ \[
+ d(A,B) = \sqrt{(3+1)^2+(1)^2+(2-8)^2} = 7.2801
+ \]
+ \item[2.] \textit{Manhattan} distance.
+\[
+d(A,B) = |3+1|+|1-0| + |2-8| = 11
+\] 
+ 
+ \item[3.]\textit{Minkowski} distance where $h = \infty$.
+\[ 
+ d(A,B) = max\{|3+1|,|1-0|,|2-8|\} =6
+ \]
+ \end{itemize} 
+ \item[c.] The \textit{Euclidean} distance between $A$ and $B$ is always shorter than (or equal to) the \textit{Manhattan} distance because of the triangle inequality. \textit{Manhattan} distance is the sum of two legs, and \textit{Euclidean} distance is the hypotenuse.
+ 
+ \item[d.] 
+ \begin{itemize}
+  \item[1.] \textit{Minkowski} distance where $h = 2$ is 412.941.
+  \item[2.] \textit{Minkowski} distance where $h = 3$ is 216.448.
+  \end{itemize}
+ \end{itemize}

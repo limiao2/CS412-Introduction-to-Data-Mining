@@ -1,0 +1,69 @@
+1074	database 
+928	system 
+743	knowledge 
+558	learning 
+514	data 
+506	logic 
+493	reasoning 
+446	model 
+426	constraint 
+375	based 
+375	relational 
+339	design 
+339	approach 
+337	base 
+304	program 
+302	planning 
+297	theory 
+292	programming 
+284	application 
+263	representation 
+239	management 
+231	temporal 
+227	language 
+227	rule 
+224	reinforcement 
+223	object 
+204	schema 
+202	domain 
+202	discovery 
+199	abstract 
+195	system database 
+184	using 
+178	solving 
+163	oriented 
+162	action 
+154	concept 
+154	description 
+151	maintenance 
+151	belief 
+145	game 
+145	network 
+139	framework 
+138	base data 
+137	computer 
+135	qualitative 
+131	extended 
+129	relational database 
+128	relation 
+126	information 
+125	expert 
+125	dependency 
+122	semantics 
+117	learning reinforcement 
+115	system knowledge 
+114	intelligence 
+113	set 
+112	tool 
+112	modeling 
+112	process 
+111	inference 
+111	complexity 
+111	base knowledge 
+107	inductive 
+105	plan 
+104	knowledge discovery 
+104	logical 
+102	oriented object 
+102	diagnosis 
+101	analysis 

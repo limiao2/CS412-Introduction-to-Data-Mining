@@ -1,0 +1,13 @@
+id,GPA,univ,published,recommendation,accepted
+1,4,top-10,yes,good,yes
+2,4,top-10,no,good,yes
+3,4,top-20,no,normal,yes
+4,3.7,top-10,yes,good,yes
+5,3.7,top-20,no,good,yes
+6,3.7,top-30,yes,good,yes
+7,3.7,top-30,no,good,no
+8,3.7,top-10,no,good,no
+9,3.5,top-20,yes,normal,no
+10,3.5,top-10,no,normal,no
+11,3.5,top-30,yes,normal,no
+12,3.5,top-30,no,good,no

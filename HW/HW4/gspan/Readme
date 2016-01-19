@@ -1,0 +1,69 @@
+[GSPAN V6 License Agreement]
+	By using the software enclosed in this package (gSpan), you agree to become
+	bound by the terms of this license. 
+
+(1).This software is for your internal use only. Please DO NOT redistribute it 
+	without the permission from the authors (Xifeng Yan and Jiawei Han).
+
+(2).This software is for academic use only. No other usage is allowed without 
+	a written permission from the authors. It cannot be used for any commercial
+	interest.
+
+(3).The authors appreciate it if you can send us your feedback and test results 
+	including any bug report.
+
+(4).The algorithm used in this software can be found  in 
+	"X. Yan and J. Han, gSpan: Graph-Based Substructure Pattern Mining, Proc. 
+    2002 Int. Conf. on Data Mining (ICDM'02), Maebashi,Japan, Dec. 2002."
+	and its corresponding Technical Report UIUCDCS-R-2002-2296 in CS, UIUC.
+
+(5).The authors do not hold any responsibility for the correctness of this 
+    software, though we crosschecked all experimental results.
+
+How-To:
+
+gSpan -f filename -s frequency [-o] [-i] 
+
+filename is a string
+frequency is a float
+
+
+OPTIONS
+	-o
+		Output frequent graph patterns. The output is located in "filename.fp".
+	-i
+		The output line starting with "x", includes the id of graphs that 
+		contain the pattern.
+
+Example: 
+	gSpan -f Compound_422 -s 0.1 -o -i
+
+	which asks gSpan to discover all frequent subgraphs whose frequency is 
+	10%. Here, the input file is "Chemical_340". It outputs the patterns in 
+	"Chemical_340.fp", with graph id. 
+
+Input Format:
+	The input format can be inferred from the file of Chemical_340: 
+	"t # N"	means the Nth graph, 
+	"v M L"	means that the Mth vertex in this graph has label L,
+	"e P Q L" means that there is an edge connecting the Pth vertex with the 
+			  Qth vertex. The edge has label L.
+
+	M, N, P, Q, and L are integers. 
+
+Output Format:
+	Normal output:
+	t # id * support 
+	vertex-edge list, same as the input format
+	x graph_id list
+
+	"id" is an integer, the serial number of the pattern. 
+	"support" is the absolute frequency of the graph pattern.
+	"graph_id list" is a list of graphs that contain the pattern. 
+	
+
+Notes: This version of gSpan includes patterns with only one vertex. 
+
+Xifeng Yan 
+Feb 20, 2009
+xyan@cs.ucsb.edu

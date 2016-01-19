@@ -1,0 +1,50 @@
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.9.8)  19 SEP 2015 18:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**cs412.tex
+(./cs412.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\c@theorem=\count88
+\c@corollary=\count89
+\c@lemma=\count90
+\c@claim=\count91
+\c@fact=\count92
+\c@definition=\count93
+\c@assumption=\count94
+\c@observation=\count95
+\c@example=\count96
+)
+! Emergency stop.
+<*> cs412.tex
+             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 258 strings out of 493725
+ 2612 string characters out of 6145913
+ 53033 words of memory out of 5000000
+ 3676 multiletter control sequences out of 15000+600000
+ 3938 words of font info for 15 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 22i,0n,19p,111b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

@@ -1,0 +1,78 @@
+\section{$k$-Nearest Neighbors (10 points)}
+You will use $k$-nearest-neighbor classifier to predict labels for new data points, and investigate under what situations $k$NN works well. The set of labeled data points are given in Tabel~\ref{tab:knn}.\\
+
+\textbf{Purpose} 
+\begin{itemize}
+	\item Understand how $k$NN works and its pros and cons.
+\end{itemize}
+
+\textbf{Requirements}
+\begin{itemize}
+	
+	\item No need to use distance-weighted labels of nearest neighbors.
+	\item Show your calculations for questions asking for a number.
+\end{itemize}
+
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{l|cc|r}
+		\textbf{id} & \multicolumn{1}{l}{$x$} & \multicolumn{1}{l|}{$y$} & \multicolumn{1}{l}{\textbf{label}} \\ \hline
+		1           & 0                       & 0                        & +1                                 \\
+		2           & 0                       & 1                        & +1                                 \\
+		3           & 1                       & 0                        & -1                                 \\
+		4           & 1                       & 1                        & -1                                 \\
+		5           & 1.5                     & 0.5                      & +1                                 \\
+		6           & 2                       & 0.5                      & -1                                
+	\end{tabular}
+	\caption{Data for $k$NN}
+	\label{tab:knn}	
+\end{table}
+
+
+\begin{enumerate}
+	\item[a.] (L2, 2')  Plot the given labeled data in the $x$-$y$ plane, and highlight the regions where data will be classified as `+1' by a $1$NN classifier (i.e, $k$NN for $k=1$).
+
+	
+	\item[b.] (L2, 2') Suppose we use a $3$NN classifier based on 100 (labeled) data points uniformly distributed in a {\it $d$-dimensional unit cube}, i.e.\ $[0,1]^d$. For $d=2$ (i.e, the unit square), what is the minimum size of a {\it $d$-dimensional cube centered at $q$} for it to cover at least 3 neighbors of $q$ in expectation? Show your steps. (Note that there is no need to consider the special case in which the query point $q$ lies near the boundary of the unit cube.)
+
+	\item[c.] (L2, 2') Calculate the minimum cube size asked in (b) for $d=100$.
+
+	\item[d.] (L3, 2') According to your calculations in (b) and (c), do you see any problem in applying a $k$NN classifier to data in high-dimensional spaces (e.g.\ $d=100$)? Briefly explain. ({\it Hint: consider the underlying principle of why $k$NN works generally.})
+
+	
+	\item[e.] (L3, 2') What are the pros and cons of using a large $k$ for the $k$NN classifier?
+\end{enumerate}
+
+
+
+%==================================================
+\section{Perceptrons (12 points)}
+You will design neurons and neural networks to implement some specified functions.\\
+
+\textbf{Purpose} 
+\begin{itemize}
+	\item Understand how neurons and neural network approximates functions.
+	\item See the different modeling capacities of perceptrons and multiple-layer neural networks (multiplayer perceptrons).
+\end{itemize}
+
+\textbf{Requirements}
+\begin{itemize}	
+	\item Show the neurons and neural networks using diagrams.
+\end{itemize}
+
+\begin{enumerate}
+	\item[a.] (L2, 2') Given $x_1,x_2\in \{0,1\}$, design a neuron that implements the logical operation {\it AND}.  That is, the neuron takes $x_1$ and $x_2$ as input and computes $y=x_1 \text{ AND } x_2$ as output ($y\in \{0,1\}$) ({\it Hint: use the activation function $threshold(a)=1$ if $a>0$ and 0 otherwise}.)
+
+	
+	\item[b.] (L2, 2') Design a neuron that outputs $y=x_1 \text{ OR } x_2$.
+
+	\item[c.] (L2, 2') Design a neuron that takes a single input $x\in\{0,1\}$ and outputs $y=\text{ NOT } x$.
+
+	
+	\item[d.] (L3, 4') Design a neural network that takes $x_1, x_2\in \{0,1\}$ as input and computes $y=x_1 \text{ XOR } x_2$ as output ($x_1\text{ XOR }x_2=1$ if and only if $x_1\neq x_2$). ({\it Hint: you can reuse the neurons you designed in (a)--(c)})
+	
+	
+	\item[e.] (L3, 2') Is it possible to implement XOR using a single layer neural network (without any hidden layer)? Explain your answer.
+
+\end{enumerate}

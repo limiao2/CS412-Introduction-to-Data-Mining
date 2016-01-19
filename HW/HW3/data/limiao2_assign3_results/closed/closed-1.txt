@@ -1,0 +1,81 @@
+1488	learning 
+1050	using 
+819	model 
+715	based 
+582	classification 
+488	feature 
+474	clustering 
+463	network 
+376	recognition 
+369	selection 
+339	method 
+314	algorithm 
+309	machine 
+299	approach 
+299	text 
+295	analysis 
+284	bayesian 
+280	classifier 
+265	multi 
+255	image 
+243	decision 
+240	kernel 
+228	tree 
+225	vector 
+222	hierarchical 
+217	support 
+208	data 
+204	probabilistic 
+200	via 
+192	multiple 
+186	structure 
+179	combining 
+178	class 
+176	supervised 
+167	markov 
+165	semi 
+151	object 
+150	segmentation 
+149	active 
+147	using learning 
+146	vector support 
+146	feature selection 
+144	detection 
+141	nearest 
+137	neighbor 
+136	boosting 
+135	robust 
+128	neural 
+126	function 
+126	estimation 
+124	regression 
+123	improving 
+123	process 
+123	linear 
+123	machine vector 
+121	variable 
+121	neighbor nearest 
+120	categorization 
+120	model using 
+117	machine support 
+115	based learning 
+115	machine support vector 
+113	machine learning 
+113	online 
+113	local 
+113	extraction 
+113	dynamic 
+111	comparison 
+109	ensemble 
+108	based model 
+108	ranking 
+108	document 
+108	classification text 
+107	model learning 
+107	training 
+107	bayesian network 
+105	semi supervised 
+105	prediction 
+105	framework 
+105	unsupervised 
+101	neural network 

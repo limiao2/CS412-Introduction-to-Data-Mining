@@ -1,0 +1,102 @@
+\input{macros-cs412.tex}
+
+%\documentclass{article}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\setlength{\parindent}{0pt}
+\usepackage{graphicx}
+\usepackage{ctable}
+%\usepackage{fullpage}
+%\usepackage{setspace} 
+\usepackage{float}
+%\usepackage{listings} 
+%\usepackage{bbm}
+\usepackage{bigstrut}
+%\usepackage{caption}
+%\usepackage{subcaption}
+%\usepackage{algpseudocode}
+%\usepackage{algorithm}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=matlab,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+\oddsidemargin 0in
+\evensidemargin 0in
+\textwidth 6.5in
+\topmargin -0.5in
+\textheight 9.0in
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true}
+\usepackage{color}
+
+\newenvironment{ans}{%
+	\vspace{5mm}
+	\textcolor{red}{{\sf Answer}}\\%
+}
+{%
+}
+
+\begin{document}
+
+
+\solution{}{Due: 12/1/2015 11:59pm}{Assignment 5}{Fall 2015}
+% Fill in the above, for example, as follows:
+% \solution{Joe Smith}{\today}{1}{Fall 2012}
+
+\pagestyle{myheadings}  % Leave this command alone
+
+\paragraph*{General Instruction}
+\begin{itemize}\vspace{-2mm}\setlength\itemsep{0mm}
+	\item Errata: After the assignment is released, any further corrections of errors or clarifications will be posted at \href{https://piazza.com/class/idqujg4tiae3q0?cid=93}{the Errata page at Piazza}. Please watch it.
+	\item Feel free to talk to other members of the class while doing the homework. We are more concerned that
+	you learn how to solve the problem than that you solve it entirely on your own. You should, however, write the solution yourself. 
+	\item Please use Piazza first if you have questions about the homework. Also feel free to send us e-mails and come to office hours. 
+	\item For each question, you should show the necessary calculation steps and reasoning---not only final results. Keep the solution brief and clear.
+	\item For a good balance of cognitive activities, we label each question with an activity type:
+	\begin{itemize}
+		\item {\bf L1 (Knowledge)} Definitions, propositions, basic concepts.
+		\item {\bf L2 (Practice)} Repeating and practicing algorithms/procedures.
+		\item {\bf L3 (Application)} Critical thinking to apply, analyze, and assess.
+	\end{itemize}
+\end{itemize}
+\paragraph*{Assignment Submission}
+\begin{itemize}\vspace{-2mm}\setlength\itemsep{0mm}
+	\setlength{\itemsep}{2pt}
+	\item Please submit your work before the due time. \textbf{We do NOT accept late submission!}
+	\item 
+	Please submit your answers electronically via  \href{http://compass2g.illinois.edu}{Compass}. Contact CITES/TAs if you have technical difficulties in submitting the assignment.
+	\item Please {\bf type} your answers in an \textbf{Answer Document}, and submit it in PDF. \textbf{Handwritten answers or hand-drawn pictures} \textbf{are not acceptable}. Your answers to all questions (including mini-MP) should be included in one Answer Document.
+	\item Please \textbf{DO NOT} zip the Answer Document (PDF) so that the graders can read it directly on Compass.  
+	Compress other files into a single zip file. Overall, you need to submit one Answer Document (PDF file), named as \texttt{hw5\_netid.pdf}, and one \texttt{zip} file, named as \texttt{hw5\_netid.zip}.
+	\item If scripts are used, you should submit the source code, and use file names to identify the questions or sub-questions being answered. E.g., \texttt{question1\_netid.py} is the python code for Question 1; and \texttt{question1a\_netid.py} that for sub-question 1(a). You can submit separate files for sub-questions or a single file for the entire question. 
+\end{itemize}
+\input{conceptual_questions}
+\input{jia}
+\input{long}
+\end{document}

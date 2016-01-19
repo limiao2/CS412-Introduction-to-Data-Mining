@@ -1,0 +1,66 @@
+\documentclass[12pt,letterpaper]{article}
+
+\newenvironment{proof}{\noindent{\bf Proof:}}{\qed\bigskip}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma} 
+\newtheorem{claim}{Claim}
+\newtheorem{fact}{Fact}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{observation}{Observation}
+\newtheorem{example}{Example}
+\newcommand{\qed}{\rule{7pt}{7pt}}
+
+\newcommand{\assignment}[4]{
+\thispagestyle{plain} 
+\newpage
+\setcounter{page}{1}
+\noindent
+\begin{center}
+\framebox{ \vbox{ \hbox to 6.28in
+{\bf CS412: Introduction to Data Mining \hfill #1}
+\vspace{4mm}
+\hbox to 6.28in
+{\hspace{2.5in}\large\mbox{Problem Set #2}}
+\vspace{4mm}
+\hbox to 6.28in
+{{\it Handed Out: #3 \hfill Due: #4}}
+}}
+\end{center}
+}
+
+\newcommand{\solution}[4]{
+\thispagestyle{plain} 
+\newpage
+\setcounter{page}{1}
+\noindent
+\begin{center}
+\framebox{ \vbox{ \hbox to 6.28in
+{\bf CS412:   Introduction to Data Mining \hfill #4}
+\vspace{4mm}
+\hbox to 6.28in
+{\hspace{2.5in}\large\mbox{#3}}
+\vspace{4mm}
+\hbox to 6.28in
+{#1 \hfill {\it #2}}
+}}
+\end{center}
+\markright{#1}
+}
+
+\newenvironment{algorithm}
+{\begin{center}
+\begin{tabular}{|l|}
+\hline
+\begin{minipage}{1in}
+\begin{tabbing}
+\quad\=\qquad\=\qquad\=\qquad\=\qquad\=\qquad\=\qquad\=\kill}
+{\end{tabbing}
+\end{minipage} \\
+\hline
+\end{tabular}
+\end{center}}
+
+\def\Comment#1{\textsf{\textsl{$\langle\!\langle$#1\/$\rangle\!\rangle$}}}
